@@ -1,9 +1,10 @@
-var instructions = " ";
+var instructions = prompt("Move the rover!", "r/l to rotate, f/b to move forwards/backwards");
 var length;
+var cols = 10;
 
-var myGrid = new Array(10);
-for (i = 0; i < 10; i++)
-  myGrid[i] = new Array(10);
+var myGrid = new Array(cols);
+for (i = 0; i < cols; i++)
+  myGrid[i] = new Array(cols);
 
 
 
@@ -83,7 +84,7 @@ function goBackward(myRover) {
 
 
 }
-
+function readInstructions (instructions){
 for(length = 0; length < instructions.length; length ++){
   switch (instructions.charAt(length)){
     case "f":
@@ -100,7 +101,7 @@ for(length = 0; length < instructions.length; length ++){
       break;
   }
 }
-
+}
 
 
 //goForward(myRover);
