@@ -1,9 +1,9 @@
 var instructions = prompt("Move the rover!", "r/l to rotate, f/b to move forwards/backwards");
 var length;
-var cols = 10;
+var cols,rows = 10;
 
-var myGrid = new Array(cols);
-for (i = 0; i < cols; i++)
+var myGrid = new Array(rows);
+for (i = 0; i < rows; i++)
   myGrid[i] = new Array(cols);
 
 
@@ -94,8 +94,10 @@ for(length = 0; length < instructions.length; length ++){
     case "l":
       rotateLeft(myRover);
       break;
+    default:
+      text("Instructions couldn't be read propoerly!");
   }
-  if (myRover.position[0] == cols){
+  if (myRover.position[0] == rows){
     myRover.position[0] = 0;
   } else if (myRover.position[1] == cols) {
     myRover.position[1] = 0;
