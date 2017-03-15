@@ -95,9 +95,9 @@ for(length = 0; length < instructions.length; length ++){
       rotateLeft(myRover);
       break;
   }
-  if (myRover.position[0] == 10){
+  if (myRover.position[0] == cols){
     myRover.position[0] = 0;
-  } else if (myRover.position[1] == 10) {
+  } else if (myRover.position[1] == cols) {
     myRover.position[1] = 0;
   }
 }
