@@ -13,6 +13,7 @@ var myRover = {
   direction: 'N'
 };
 
+
 function rotateRight(myRover) {
   switch(myRover.direction) {
     case 'N':
@@ -93,6 +94,11 @@ for(length = 0; length < instructions.length; length ++){
     case "l":
       rotateLeft(myRover);
       break;
+  }
+  if (myRover.position[0] == 10){
+    myRover.position[0] = 0;
+  } else if (myRover.position[1] == 10) {
+    myRover.position[1] = 0;
   }
 }
 
