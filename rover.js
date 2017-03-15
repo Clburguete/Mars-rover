@@ -62,9 +62,7 @@ function goForward(myRover) {
     case 'W':
       myRover.position[1]--;
       break;
-  }
-
-}
+}}
 
 function goBackward(myRover) {
     switch(myRover.direction) {
@@ -80,11 +78,7 @@ function goBackward(myRover) {
       case 'W':
         myRover.position[1]++;
         break;
-    }
-
-
-}
-function readInstructions (instructions){
+}}
 for(length = 0; length < instructions.length; length ++){
   switch (instructions.charAt(length)){
     case "f":
@@ -101,7 +95,7 @@ for(length = 0; length < instructions.length; length ++){
       break;
   }
 }
-}
+
 console.log(myRover.position);
 
 
