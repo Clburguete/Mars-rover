@@ -96,12 +96,13 @@ for(length = 0; length < instructions.length; length ++){
     case "r":
       rotateRight(myRover);
       break;
-    case "f":
+    case "l":
       rotateLeft(myRover);
       break;
   }
 }
 }
+console.log(myRover.position);
 
 
 //goForward(myRover);
